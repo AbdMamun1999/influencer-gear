@@ -572,7 +572,7 @@ nav span a{
     }
     /* footer sectopm */
     .footer-section{
-        margin-top: 0px;
+        margin-top: 30px;
     }
     .footer-nav{
         flex-direction: row;

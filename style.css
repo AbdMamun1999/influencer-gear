@@ -78,6 +78,75 @@ nav span a{
     font-weight: 700;
     font-size: 52px;
     line-height: 70px;
+    position: relative;
+}
+.home-title::after{
+    content: 'Start your Journey';
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    animation: typing 4s linear .2s;
+    
+}
+/* --------------------
+    Home Title Animation
+-----------------------*/
+@keyframes typing {
+    0%{
+        content: "|";
+    }
+    2%{
+        content: "S|";
+    }
+    4%{
+        content: "St|";
+    }
+    8%{
+        content: "Sta|";
+    }
+    10%{
+        content: "Start|";
+    }
+    12%{
+        content: "Start |";
+    }
+    14%{
+        content: "Start y|";
+    }
+    16%{
+        content: "Start yo|";
+    }
+    18%{
+        content: "Start you|";
+    }
+    20%{
+        content: "Start your|";
+    }
+    22%{
+        content: "Start your |";
+    }
+    24%{
+        content: "Start your J|";
+    }
+    26%{
+        content: "Start your Jo|";
+    }
+    28%{
+        content: "Start your Jou|";
+    }
+    30%{
+        content: "Start your Jour|";
+    }
+    32%{
+        content: "Start your Journ|";
+    }
+    34%{
+        content: "Start your Journe|";
+    }
+    36%{
+        content: "Start your Journey";
+    }
 }
 .home-passage{
     color: #3A3A3A;
@@ -270,6 +339,7 @@ nav span a{
     /* home section */
     .home{
         flex-direction: column;
+        gap: 45px;
     }
     .home-left{
         display: flex;
@@ -277,10 +347,15 @@ nav span a{
         align-items: center;
     }
     .home-title{
+        width: 90%;
         text-align: center;
         font-size: 28px;
         font-weight: 600;
-        line-height: 40px;
+        line-height: 32px;
+    }
+    .home-title::after{
+        left: 0;
+        right: 0;
     }
     .home-passage{
         text-align: center;
@@ -336,7 +411,7 @@ nav span a{
     .home-title{
         font-size: 24px;
         font-weight: 600;
-        line-height: 40px;
+        line-height: 32px;
     }
     .home-button{
         width: 53%;
@@ -466,6 +541,7 @@ nav span a{
     /* home section */
     .home{
         flex-direction: row;
+        gap: 25px;
     }
     .home-left{
         display: flex;
@@ -546,7 +622,7 @@ nav span a{
     .home-title{
         font-weight: 700;
         font-size: 52px;
-        line-height: 70px;
+        line-height: 58px;
     }
     .home-passage{
         font-size: 18px;
@@ -564,10 +640,10 @@ nav span a{
 
     }
     .product{
-        width: 329;
+        width: 313;
     }
     .product-banner img{
-        width: 300px;
+        width: 269px;
         height: 256px;
     }
     /* footer sectopm */
